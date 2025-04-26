@@ -1,7 +1,7 @@
 
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Robot, Code, Computer, ChartLine } from "lucide-react";
+import { Bot, Code, Computer, ChartLine } from "lucide-react";
 
 const projects = [
   {
@@ -25,7 +25,7 @@ const projects = [
     description: "Système intelligent pour l'automatisation du petit déjeuner avec intégration d'un bras robotique et d'un convoyeur",
     tech: ["Arduino IDE", "ESP32", "Capteur ultrasonique"],
     status: "2024",
-    icon: Robot,
+    icon: Bot, // Changed from Robot to Bot
     color: "bg-green-500"
   },
   {
