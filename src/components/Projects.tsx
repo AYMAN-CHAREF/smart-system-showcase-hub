@@ -1,7 +1,7 @@
 
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Bot, Code, Computer, ChartLine } from "lucide-react";
+import { Bot, Code, Computer, ChartLine, Github } from "lucide-react";
 
 const projects = [
   {
@@ -10,7 +10,8 @@ const projects = [
     tech: ["Raspberry Pi", "Python", "Flask/FastAPI", "OpenCV", "MQTT"],
     status: "En cours",
     icon: ChartLine,
-    color: "bg-blue-500"
+    color: "bg-blue-500",
+    github: "https://github.com/AYMAN-CHAREF/Towards-HR-4.0"
   },
   {
     title: "Contrôle numérique machine à courant continu",
@@ -25,8 +26,9 @@ const projects = [
     description: "Système intelligent pour l'automatisation du petit déjeuner avec intégration d'un bras robotique et d'un convoyeur",
     tech: ["Arduino IDE", "ESP32", "Capteur ultrasonique"],
     status: "2024",
-    icon: Bot, // Changed from Robot to Bot
-    color: "bg-green-500"
+    icon: Bot,
+    color: "bg-green-500",
+    github: "https://github.com/AYMAN-CHAREF/Distributeur-automatique-des-toasts-tartin-s"
   },
   {
     title: "Onduleur monophasé",
@@ -34,7 +36,8 @@ const projects = [
     tech: ["Arduino IDE", "ISIS PROTEUS", "KiCad"],
     status: "2023",
     icon: Code,
-    color: "bg-orange-500"
+    color: "bg-orange-500",
+    github: "https://github.com/AYMAN-CHAREF/Single-phase-inverter"
   }
 ];
 
@@ -57,7 +60,19 @@ const Projects = () => {
                     <project.icon className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold">{project.title}</h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-xl font-semibold">{project.title}</h3>
+                      {project.github && (
+                        <a 
+                          href={project.github} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-gray-600 hover:text-gray-900 transition-colors"
+                        >
+                          <Github className="h-5 w-5" />
+                        </a>
+                      )}
+                    </div>
                     <span className="text-sm text-gray-500">{project.status}</span>
                   </div>
                 </div>
