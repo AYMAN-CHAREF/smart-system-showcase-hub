@@ -1,24 +1,39 @@
 
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { Robot, Code, Computer, ChartLine } from "lucide-react";
 
 const projects = [
   {
-    title: "Smart Home Automation",
-    description: "Developed an integrated home automation system using IoT sensors and ML algorithms",
-    tech: ["IoT", "Machine Learning", "Python"],
+    title: "Towards HR 4.0",
+    description: "Système de reconnaissance faciale pour l'identification des traits du visage des employés et analyse prédictive de leur performance",
+    tech: ["Raspberry Pi", "Python", "Flask/FastAPI", "OpenCV", "MQTT"],
+    status: "En cours",
+    icon: ChartLine,
     color: "bg-blue-500"
   },
   {
-    title: "Industrial IoT Platform",
-    description: "Created a scalable IoT platform for industrial monitoring and control",
-    tech: ["React", "Node.js", "MQTT"],
+    title: "Contrôle numérique machine à courant continu",
+    description: "Commande par Modulation de Largeur d'Impulsion (MLI)",
+    tech: ["MATLAB", "SIMULINK"],
+    status: "2024",
+    icon: Computer,
     color: "bg-purple-500"
   },
   {
-    title: "Predictive Maintenance System",
-    description: "Implemented predictive maintenance using sensor data and advanced analytics",
-    tech: ["Data Analysis", "Python", "TensorFlow"],
+    title: "Smart Breakfast",
+    description: "Système intelligent pour l'automatisation du petit déjeuner avec intégration d'un bras robotique et d'un convoyeur",
+    tech: ["Arduino IDE", "ESP32", "Capteur ultrasonique"],
+    status: "2024",
+    icon: Robot,
+    color: "bg-green-500"
+  },
+  {
+    title: "Onduleur monophasé",
+    description: "Étude et réalisation d'un onduleur monophasé avec contrôle des instants de commutation des transistors",
+    tech: ["Arduino IDE", "ISIS PROTEUS", "KiCad"],
+    status: "2023",
+    icon: Code,
     color: "bg-orange-500"
   }
 ];
@@ -27,8 +42,8 @@ const Projects = () => {
   return (
     <section className="py-20 bg-white" id="projects">
       <div className="container px-4 mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-3xl font-bold text-center mb-12">Projets</h2>
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -36,9 +51,16 @@ const Projects = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
             >
-              <Card className="p-6 hover:shadow-lg transition-shadow">
-                <div className={`w-12 h-12 rounded-lg ${project.color} mb-4`} />
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <Card className="p-6 hover:shadow-lg transition-shadow h-full">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className={`p-2 rounded-lg ${project.color}`}>
+                    <project.icon className="h-6 w-6 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold">{project.title}</h3>
+                    <span className="text-sm text-gray-500">{project.status}</span>
+                  </div>
+                </div>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
