@@ -1,9 +1,9 @@
 
 import { motion } from "framer-motion";
-import { Language } from "lucide-react";
+import { Languages } from "lucide-react";
 import { Card } from "./ui/card";
 
-const Languages = () => {
+const LanguagesComponent = () => {
   const languages = [
     { name: "Anglais", level: "Courant" },
     { name: "Français", level: "Courant" },
@@ -24,7 +24,7 @@ const Languages = () => {
               transition={{ delay: index * 0.1 }}
             >
               <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-                <Language className="h-8 w-8 mx-auto mb-4 text-blue-500" />
+                <Languages className="h-8 w-8 mx-auto mb-4 text-blue-500" />
                 <h3 className="font-semibold mb-2">{lang.name}</h3>
                 <p className="text-sm text-gray-600">{lang.level}</p>
               </Card>
@@ -36,4 +36,5 @@ const Languages = () => {
   );
 };
 
-export default Languages;
+export default LanguagesComponent;
+
