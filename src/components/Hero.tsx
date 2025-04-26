@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Code, Cpu, Globe } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 const Hero = () => {
   return (
@@ -10,29 +11,46 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center"
+          className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Smart Systems
-            <span className="text-blue-500"> Engineer</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Crafting intelligent solutions through innovative system design and integration
-          </p>
-          <div className="flex justify-center gap-8 mb-12">
-            <div className="flex items-center gap-2">
-              <Code className="text-blue-500" />
-              <span>System Architecture</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Cpu className="text-purple-500" />
-              <span>IoT Solutions</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Globe className="text-orange-500" />
-              <span>Smart Integration</span>
+          <div className="flex-1 text-center md:text-left">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Smart Systems
+              <span className="text-blue-500"> Engineer</span>
+            </h1>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl">
+              Crafting intelligent solutions through innovative system design and integration
+            </p>
+            <div className="flex flex-wrap justify-center md:justify-start gap-6 mb-8">
+              <div className="flex items-center gap-2">
+                <Code className="text-blue-500" />
+                <span>System Architecture</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Cpu className="text-purple-500" />
+                <span>IoT Solutions</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Globe className="text-orange-500" />
+                <span>Smart Integration</span>
+              </div>
             </div>
           </div>
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="relative"
+          >
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl">
+              <img
+                src="/lovable-uploads/8de73662-d10a-42c1-87a6-f028bacb7ae9.png"
+                alt="Smart Systems Engineer"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
