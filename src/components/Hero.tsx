@@ -1,6 +1,5 @@
-
 import { motion } from "framer-motion";
-import { Code, Cpu, Globe, Mail, Phone, Linkedin, GitHub, MapPin } from "lucide-react";
+import { Code, Cpu, Globe, Mail, Phone, Linkedin, github, MapPin } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 const Hero = () => {
@@ -69,7 +68,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="text-dark-muted hover:text-white transition-colors flex items-center gap-2"
               >
-                <GitHub className="w-5 h-5 text-gray-500" />
+                <github className="w-5 h-5 text-gray-500" />
                 <span>GitHub</span>
               </a>
             </div>
