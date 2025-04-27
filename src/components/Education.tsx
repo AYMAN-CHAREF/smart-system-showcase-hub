@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { GraduationCap, School, Award } from "lucide-react";
 import { Card } from "./ui/card";
@@ -36,9 +35,9 @@ const Education = () => {
   ];
 
   return (
-    <section className="py-20 bg-white" id="education">
+    <section className="py-20 bg-dark-bg" id="education">
       <div className="container px-4 mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Diplômes et Formations</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-dark-text">Diplômes et Formations</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {education.map((item, index) => (
             <motion.div

@@ -1,13 +1,12 @@
-
 import { motion } from "framer-motion";
 import { Briefcase, Code } from "lucide-react";
 import { Card } from "./ui/card";
 
 const Experience = () => {
   return (
-    <section className="py-20 bg-gray-50" id="experience">
+    <section className="py-20 bg-dark-card" id="experience">
       <div className="container px-4 mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Experience Professionnelle</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-dark-text">Experience Professionnelle</h2>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

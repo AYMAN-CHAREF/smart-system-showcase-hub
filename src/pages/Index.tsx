@@ -9,7 +9,7 @@ import ExtraCurricular from "@/components/ExtraCurricular";
 
 const Index = () => {
   return (
-    <div className="font-inter">
+    <div className="font-inter bg-dark-bg text-dark-text">
       <Hero />
       <Education />
       <Experience />

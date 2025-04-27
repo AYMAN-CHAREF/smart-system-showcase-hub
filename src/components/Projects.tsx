@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Bot, Code, Computer, ChartLine, Github } from "lucide-react";
@@ -43,9 +42,9 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-20 bg-white" id="projects">
+    <section className="py-20 bg-dark-bg" id="projects">
       <div className="container px-4 mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Projets</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-dark-text">Projets</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div

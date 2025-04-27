@@ -5,7 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-dark-bg to-dark-accent">
       <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -14,11 +14,11 @@ const Hero = () => {
           className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
         >
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-dark-text mb-6">
               Smart Systems
               <span className="text-blue-500"> Engineer</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl">
+            <p className="text-xl text-dark-muted mb-8 max-w-2xl">
               Crafting intelligent solutions through innovative system design and integration
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-6 mb-8">

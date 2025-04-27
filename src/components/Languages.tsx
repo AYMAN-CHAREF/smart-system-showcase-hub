@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Languages } from "lucide-react";
 import { Card } from "./ui/card";
@@ -12,9 +11,9 @@ const LanguagesComponent = () => {
   ];
 
   return (
-    <section className="py-20 bg-white" id="languages">
+    <section className="py-20 bg-dark-card" id="languages">
       <div className="container px-4 mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Langues</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-dark-text">Langues</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {languages.map((lang, index) => (
             <motion.div
@@ -37,4 +36,3 @@ const LanguagesComponent = () => {
 };
 
 export default LanguagesComponent;
-

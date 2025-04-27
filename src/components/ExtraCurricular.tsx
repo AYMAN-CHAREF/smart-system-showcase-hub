@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 import { Card } from "./ui/card";
@@ -35,9 +34,9 @@ const ExtraCurricular = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50" id="extracurricular">
+    <section className="py-20 bg-dark-bg" id="extracurricular">
       <div className="container px-4 mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Extra-scolaires</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-dark-text">Extra-scolaires</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

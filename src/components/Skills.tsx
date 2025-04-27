@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const skills = [
@@ -9,7 +8,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="py-20 bg-gray-50" id="skills">
+    <section className="py-20 bg-dark-card" id="skills">
       <div className="container px-4 mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Skills & Expertise</h2>
         <div className="grid md:grid-cols-3 gap-8">
