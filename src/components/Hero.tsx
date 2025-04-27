@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Code, Cpu, Globe } from "lucide-react";
+import { Code, Cpu, Globe, Mail, Phone, Linkedin, GitHub, MapPin } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 const Hero = () => {
@@ -34,6 +34,44 @@ const Hero = () => {
                 <Globe className="text-orange-500" />
                 <span>Smart Integration</span>
               </div>
+            </div>
+
+            {/* Contact Information */}
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
+              <a 
+                href="mailto:eg.aymancharef@gmail.com" 
+                className="text-dark-muted hover:text-white transition-colors flex items-center gap-2"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Mail className="w-5 h-5 text-blue-500" />
+                <span>eg.aymancharef@gmail.com</span>
+              </a>
+              <a 
+                href="tel:+212664677279" 
+                className="text-dark-muted hover:text-white transition-colors flex items-center gap-2"
+              >
+                <Phone className="w-5 h-5 text-green-500" />
+                <span>+212 664-677279</span>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/ayman-charef-b57221236/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-dark-muted hover:text-white transition-colors flex items-center gap-2"
+              >
+                <Linkedin className="w-5 h-5 text-blue-700" />
+                <span>LinkedIn</span>
+              </a>
+              <a 
+                href="https://github.com/AYMAN-CHAREF" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-dark-muted hover:text-white transition-colors flex items-center gap-2"
+              >
+                <GitHub className="w-5 h-5 text-gray-500" />
+                <span>GitHub</span>
+              </a>
             </div>
           </div>
           
