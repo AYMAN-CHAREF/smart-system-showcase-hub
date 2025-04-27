@@ -5,6 +5,7 @@ import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Languages from "@/components/Languages";
+import ExtraCurricular from "@/components/ExtraCurricular";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Projects />
       <Skills />
       <Languages />
+      <ExtraCurricular />
     </div>
   );
 };
