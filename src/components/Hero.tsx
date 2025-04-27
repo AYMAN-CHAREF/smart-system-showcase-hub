@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Cpu, Globe, Mail, Phone, Linkedin, github, MapPin } from "lucide-react";
+import { Code, Cpu, Globe, Mail, Phone, Linkedin, Github, MapPin } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 const Hero = () => {
@@ -35,7 +35,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Contact Information */}
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
               <a 
                 href="mailto:eg.aymancharef@gmail.com" 
@@ -68,7 +67,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="text-dark-muted hover:text-white transition-colors flex items-center gap-2"
               >
-                <github className="w-5 h-5 text-gray-500" />
+                <Github className="w-5 h-5 text-gray-500" />
                 <span>GitHub</span>
               </a>
             </div>
