@@ -8,7 +8,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="py-20 bg-dark-card" id="skills">
+    <section className="py-20 transition-colors duration-300 dark:bg-dark-card sombre:bg-[#221F26]" id="skills">
       <div className="container px-4 mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Skills & Expertise</h2>
         <div className="grid md:grid-cols-3 gap-8">

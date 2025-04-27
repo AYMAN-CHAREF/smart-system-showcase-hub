@@ -4,7 +4,7 @@ import { Card } from "./ui/card";
 
 const Experience = () => {
   return (
-    <section className="py-20 bg-dark-card" id="experience">
+    <section className="py-20 transition-colors duration-300 dark:bg-dark-card sombre:bg-[#221F26]" id="experience">
       <div className="container px-4 mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 text-dark-text">Experience Professionnelle</h2>
         <motion.div

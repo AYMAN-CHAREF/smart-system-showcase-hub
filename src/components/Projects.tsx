@@ -42,7 +42,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-20 bg-dark-bg" id="projects">
+    <section className="py-20 transition-colors duration-300 dark:bg-dark-bg sombre:bg-[#1A1F2C]" id="projects">
       <div className="container px-4 mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 text-dark-text">Projets</h2>
         <div className="grid md:grid-cols-2 gap-8">

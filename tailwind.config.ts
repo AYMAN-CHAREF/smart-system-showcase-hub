@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -97,5 +98,10 @@ export default {
       }
     }
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function({ addVariant }: { addVariant: (name: string, definition: string) => void }) {
+      addVariant('sombre', '[class="sombre"] &');
+    }
+  ],
 } satisfies Config;

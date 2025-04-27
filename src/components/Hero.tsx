@@ -1,10 +1,15 @@
+
 import { motion } from "framer-motion";
 import { Code, Cpu, Globe, Mail, Phone, Linkedin, Github, MapPin } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const Hero = () => {
+  const { theme } = useTheme();
+  
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-dark-bg to-dark-accent">
+    <section className={`min-h-screen flex items-center justify-center transition-colors duration-300
+      dark:bg-gradient-to-br dark:from-dark-bg dark:to-dark-accent
+      sombre:bg-gradient-to-br sombre:from-[#1A1F2C] sombre:to-[#403E43]`}>
       <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
